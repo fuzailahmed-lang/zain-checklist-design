@@ -11,12 +11,11 @@
 /* Compact checklist task rows */
 .step{min-height:48px;padding:8px 10px;justify-content:space-between;background:#fff;border:1px solid #ebe7f0}
 .step.done{color:var(--ink);background:#eefaf4;border-color:#b8e8cf}
-.step.skipped{color:#7d7689;background:#faf9fb}
 .step-info{min-width:0;flex:1;display:flex;align-items:center;gap:8px}
 .step-info strong{min-width:0;font-size:11px}
 .step-duration{display:inline-flex!important;align-items:center;flex:0 0 auto;padding:4px 7px;border-radius:5px;color:#6847bf!important;background:#eee9ff;font-size:9px!important;font-weight:800;line-height:1}
 .step-actions{display:flex;align-items:center;gap:7px}
 .step-action{min-width:58px}
 .step-skip{min-width:48px;height:29px;border:1px solid #dcd6e6;border-radius:7px;color:#625b70;background:#fff;font-size:9px;font-weight:700}
-.step-skipped .step-action{opacity:.75}
+.step-action.completed{min-width:82px;display:inline-flex;align-items:center;justify-content:center;gap:5px;background:var(--success);cursor:default}
 @media(max-width:520px){.step{align-items:flex-start;gap:10px}.step-info{align-items:flex-start;flex-direction:column;gap:5px}.step-actions{flex:0 0 auto}}
