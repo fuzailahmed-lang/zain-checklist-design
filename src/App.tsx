@@ -5,20 +5,23 @@ type Step = { id:string; title:string; minutes:number };
 type Section = { id:string; title:string; description:string; icon:typeof UsersRound; tone:string; guideTitle:string; guideText:string; duration:string; steps:Step[] };
 
 const sections:Section[] = [
-  { id:"leads", title:"Set up lead management", description:"Add leads and organize your pipeline.", icon:UsersRound, tone:"purple", guideTitle:"Build your lead pipeline", guideText:"Create a simple process for every new lead.", duration:"3:12", steps:[
-    {id:"create-lead",title:"Create your first lead",minutes:2}, {id:"import-leads",title:"Import your leads",minutes:3}, {id:"lead-source",title:"Set lead sources",minutes:1}, {id:"assign-lead",title:"Assign a lead",minutes:1}
+  { id:"leads", title:"Set up your lead management", description:"Add leads, organize them, and begin outreach.", icon:UsersRound, tone:"purple", guideTitle:"Build your lead pipeline", guideText:"Create or import leads, then prepare your first outreach.", duration:"3:12", steps:[
+    {id:"create-or-import-lead",title:"Create or import your first lead",minutes:3}, {id:"lead-source",title:"Select lead source",minutes:1}, {id:"lead-status",title:"Select lead status",minutes:1}, {id:"first-sms",title:"Send your first SMS",minutes:2}, {id:"first-email",title:"Send your first Email",minutes:2}
   ]},
-  { id:"automation", title:"Set up automations", description:"Automate one useful follow-up.", icon:Workflow, tone:"blue", guideTitle:"Automate your follow-ups", guideText:"Save time with a simple lead response flow.", duration:"2:38", steps:[
-    {id:"automation",title:"Create your first automation",minutes:3}, {id:"test-automation",title:"Test your automation",minutes:1}
+  { id:"automation", title:"Set up your automations", description:"Create welcome messages and lead assignment rules.", icon:Workflow, tone:"blue", guideTitle:"Automate your follow-ups", guideText:"Set up welcome messages and route new leads automatically.", duration:"2:38", steps:[
+    {id:"welcome-sms",title:"Welcome SMS",minutes:2}, {id:"welcome-email",title:"Welcome Email",minutes:2}, {id:"email-assignment",title:"Automatic email assignment",minutes:2}
   ]},
-  { id:"appointments", title:"Enable appointment booking", description:"Connect your calendar and accept bookings.", icon:CalendarDays, tone:"green", guideTitle:"Open your calendar", guideText:"Set availability and publish a booking option.", duration:"3:05", steps:[
-    {id:"calendar",title:"Connect your calendar",minutes:2}, {id:"appointment-type",title:"Create an appointment type",minutes:3}, {id:"first-booking",title:"Book a test meeting",minutes:2}
+  { id:"appointments", title:"Set up your appointment scheduler", description:"Connect your calendar and prepare your first booking.", icon:CalendarDays, tone:"green", guideTitle:"Set up appointment booking", guideText:"Connect availability, create an appointment type, and book a meeting.", duration:"3:05", steps:[
+    {id:"calendar",title:"Connect your calendar",minutes:2}, {id:"appointment-type",title:"Create your first appointment type",minutes:3}, {id:"first-booking",title:"Book your first meeting",minutes:2}
   ]},
-  { id:"voice", title:"Configure Voice AI", description:"Create an agent and test a call.", icon:Bot, tone:"orange", guideTitle:"Set up your voice agent", guideText:"Configure one agent and make a test call.", duration:"2:45", steps:[
-    {id:"voice",title:"Create a voice agent",minutes:3}, {id:"voice-test",title:"Make a test call",minutes:2}
+  { id:"voice", title:"Set up your AI voice agent", description:"Create, configure, and test your voice agent.", icon:Bot, tone:"orange", guideTitle:"Set up your voice agent", guideText:"Create your agent, configure its behavior, and run a test.", duration:"2:45", steps:[
+    {id:"voice",title:"Create your first voice agent",minutes:3}, {id:"voice-configure",title:"Configure your voice agent",minutes:2}, {id:"voice-test",title:"Test your voice agent",minutes:2}
   ]},
-  { id:"chatbot", title:"Configure AI Chatbot", description:"Create a bot and test a conversation.", icon:MessageSquareText, tone:"violet", guideTitle:"Set up your chatbot", guideText:"Add a simple greeting and test the response.", duration:"2:30", steps:[
-    {id:"chatbot",title:"Create a chatbot",minutes:3}, {id:"chat-test",title:"Test a conversation",minutes:2}
+  { id:"chatbot", title:"Set up your AI chatbot", description:"Create, configure, and test your chatbot.", icon:MessageSquareText, tone:"violet", guideTitle:"Set up your chatbot", guideText:"Create your chatbot, configure its responses, and test it.", duration:"2:30", steps:[
+    {id:"chatbot",title:"Create your first chatbot",minutes:3}, {id:"chat-configure",title:"Configure your chatbot",minutes:2}, {id:"chat-test",title:"Test your chatbot",minutes:2}
+  ]},
+  { id:"performance", title:"Boost performance", description:"Invite your team and create a dashboard.", icon:LayoutDashboard, tone:"purple", guideTitle:"Improve team performance", guideText:"Collaborate with your team and track the metrics that matter.", duration:"2:20", steps:[
+    {id:"invite-team",title:"Invite your team members",minutes:2}, {id:"first-dashboard",title:"Create your first dashboard",minutes:3}
   ]}
 ];
 
